@@ -1,0 +1,161 @@
+
+**** 06/14/16 18:46:14 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project1"  [ C:\Users\Khalil\Desktop\project1-pspicefiles\schematic1\project1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../project1-pspicefiles/project1.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Khalil\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT1
+Q_Q1         N00645 N00649 N00708 Qbreakn 
+Q_Q2         N00700 N00693 N00708 QbreakN 
+Q_Q3         N00919 N00645 N00927 QbreakN 
+Q_Q4         N00923 N00700 N00927 QbreakN 
+Q_Q5         N00735 N00735 N00739 QbreakN 
+Q_Q6         N00708 N00735 N00739 QbreakN 
+R_R1         N00645 N00641  102 TC=0,0 
+R_R2         N00700 N00704  102 TC=0,0 
+R_R3         N00919 N00911  250 TC=0,0 
+R_R4         N00923 N00915  250 TC=0,0 
+R_R6         N00735 0  307 TC=0,0 
+R_R5         0 N00927  1200 TC=0,0 
+V_V1         N00641 0 3.3
+V_V2         N00915 0 3.3
+V_V3         N00911 0 3.3
+V_V4         N00704 0 3.3
+V_V5         0 N00739 3.3
+V_V10         N00693 0  AC -1m
++SIN 0 -1m 1000 0 0 0
+V_V11         N00649 0  AC 1m
++SIN 0 1m 1000 0 0 0
+
+**** RESUMING project1.cir ****
+.END
+
+**** 06/14/16 18:46:14 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project1"  [ C:\Users\Khalil\Desktop\project1-pspicefiles\schematic1\project1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Qbreakn         
+               NPN             
+       LEVEL    1            
+          IS  300.000000E-15 
+          BF  120            
+          NF    1            
+         VAF  100            
+         IKF     .6          
+          BR     .2901       
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC     .5          
+         CJE   10.000000E-12 
+         VJE     .75         
+         MJE     .3551       
+         CJC    1.000000E-12 
+         VJC     .75         
+         MJC     .3357       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  800.000000E-12 
+          TR  246.400000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 06/14/16 18:46:14 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project1"  [ C:\Users\Khalil\Desktop\project1-pspicefiles\schematic1\project1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00641)    3.3000 (N00645)    2.8566 (N00649)    0.0000 (N00693)    0.0000     
+
+(N00700)    2.8566 (N00704)    3.3000 (N00708)    -.6049 (N00735)   -2.6762     
+
+(N00739)   -3.3000 (N00911)    3.3000 (N00915)    3.3000 (N00919)    3.0633     
+
+(N00923)    3.0633 (N00927)    2.2908 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.347E-03
+    V_V2        -9.466E-04
+    V_V3        -9.466E-04
+    V_V4        -4.347E-03
+    V_V5        -1.747E-02
+    V_V10       -3.541E-05
+    V_V11       -3.541E-05
+
+    TOTAL POWER DISSIPATION   9.26E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/14/16 18:46:14 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project1"  [ C:\Users\Khalil\Desktop\project1-pspicefiles\schematic1\project1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

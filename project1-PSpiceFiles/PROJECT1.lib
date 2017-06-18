@@ -1,0 +1,9 @@
+* PSpice Model Editor - Version 16.6.0
+
+*$
+.model Qbreakn NPN(Is=300E-15 Xti=3 Eg=1.11 Vaf=100 Bf=120 Ne=1.5 Ise=0 
++ Ikf=.6 Xtb=1.5 Br=.2901 Nc=2 Isc=0 Ikr=0 Rc=.5 Cjc=1p
++ Mjc=.3357 Vjc=.75 Fc=.5 Cje=10p Mje=.3551 Vje=.75 Tr=246.4n
++ Tf=800p Itf=0 Vtf=0 Xtf=0 Rb=10)
+
+*$

@@ -1,0 +1,22 @@
+* source PROJECT1
+Q_Q1         N00645 N00649 N00708 Qbreakn 
+Q_Q2         N00700 N00693 N00708 QbreakN 
+Q_Q3         N00919 N00645 N00927 QbreakN 
+Q_Q4         N00923 N00700 N00927 QbreakN 
+Q_Q5         N00735 N00735 N00739 QbreakN 
+Q_Q6         N00708 N00735 N00739 QbreakN 
+R_R1         N00645 N00641  102 TC=0,0 
+R_R2         N00700 N00704  102 TC=0,0 
+R_R3         N00919 N00911  250 TC=0,0 
+R_R4         N00923 N00915  250 TC=0,0 
+R_R6         N00735 0  307 TC=0,0 
+R_R5         0 N00927  1200 TC=0,0 
+V_V1         N00641 0 3.3
+V_V2         N00915 0 3.3
+V_V3         N00911 0 3.3
+V_V4         N00704 0 3.3
+V_V5         0 N00739 3.3
+V_V10         N00693 0  AC -1m
++SIN 0 -1m 1000 0 0 0
+V_V11         N00649 0  AC 1m
++SIN 0 1m 1000 0 0 0
